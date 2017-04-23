@@ -15,19 +15,12 @@ public class Reddit {
     private static String frontPageURL = "{https://www.reddit.com/.json}";
 
     public static String redditFrontAll(Context context) throws JSONException {
-        JSONObject response = new JSONObject(frontPageURL);
+        JSONArray response = new JSONArray(frontPageURL);
 
         Log.d("RESPONSE", "got here");
-        JSONObject data = response.getJSONObject("data");
-        JSONArray someShit = data.getJSONArray("children");
-
-        for (int i = 0; i < someShit.length(); i++) {
-            JSONObject something = someShit.getJSONObject(i);
-            String title = something.getString("title");
-            String score = something.getString("score");
-            Log.d("REDDIT_TITLE", String.valueOf(title));
-            Log.d("REDDIT_SCORE", String.valueOf(score));
-        }
+        //JSONObject data = response.getJSONObject("data");
+        //JSONArray someShit = data.getJSONArray("children");
+        JSONParser parser = new JSONParser(response);
 
         return "hello";
     }
