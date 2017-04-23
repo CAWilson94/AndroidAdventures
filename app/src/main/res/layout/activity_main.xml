@@ -10,22 +10,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="caw.noteslist.MainActivity">
 
+
     <Button
-        android:text="Random Food"
+        android:text="FoodWheel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/random_food_button"
-        android:layout_below="@+id/entry_show"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/food_wheel" />
 
-    <TextView
-        android:text="food here"
+    <Button
+        android:text="FrontPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="181dp"
-        android:id="@+id/food_here_view"
-        android:layout_below="@+id/random_food_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/food_wheel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/front_page" />
 
+    <Button
+        android:text="Weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/front_page"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/weather"
+        android:layout_alignRight="@+id/front_page"
+        android:layout_alignEnd="@+id/front_page" />
+
+    <Button
+        android:text="StopWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/stop_watch" />
+
+    <Button
+        android:text="ToDoList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stop_watch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/to_do_list"
+        android:layout_alignRight="@+id/weather"
+        android:layout_alignEnd="@+id/weather" />
 </RelativeLayout>
