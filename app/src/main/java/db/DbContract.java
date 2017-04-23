@@ -8,7 +8,7 @@ import android.provider.BaseColumns;
 
 public class DbContract {
 
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 4;
     public static final String DATABASE_NAME = "notes.db";
     private static final String TEXT_TYPE = " TEXT";
     private static final String DOUBLE_TYPE = " DOUBLE";
@@ -46,7 +46,7 @@ public class DbContract {
         public static final String CREATE_TABLE = "CREATE TABLE " +
                 TABLE_NAME + " (" +
                 COLUMN_NAME_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                COLUMN_NAME_FOOD_NAME + TEXT_TYPE + COMMA_SEP + " ) ";
+                COLUMN_NAME_FOOD_NAME + TEXT_TYPE + " ) ";
 
         public static final String DELETE_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
 

@@ -8,6 +8,13 @@ public class FoodWheel {
     public String foodName = null;
     public int foodId = 0;
 
+    public FoodWheel(){
+    }
+
+    public FoodWheel(String foodName){
+        this.foodName = foodName;
+    }
+
     public int getFoodId() {
         return foodId;
     }

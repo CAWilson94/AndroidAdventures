@@ -4,6 +4,9 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import foodWheel.FoodWheelDbWrapper;
+
+
 /**
  * Created by Charlotte on 22/04/2017.
  */
@@ -21,6 +24,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(DbContract.BlogEntry.CREATE_TABLE);
         db.execSQL(DbContract.FoodwheelEntry.CREATE_TABLE);
+        FoodWheelDbWrapper.initialFoodWheelFill(context,db);
     }
 
     @Override
