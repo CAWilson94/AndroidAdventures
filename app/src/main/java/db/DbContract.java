@@ -38,5 +38,20 @@ public class DbContract {
         public static final String DELETE_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
     }
 
+    public static class FoodwheelEntry implements BaseColumns {
+        public static final String TABLE_NAME = "food_wheel";
+        public static final String COLUMN_NAME_ID = "id";
+        public static final String COLUMN_NAME_FOOD_NAME = "name";
+
+        public static final String CREATE_TABLE = "CREATE TABLE " +
+                TABLE_NAME + " (" +
+                COLUMN_NAME_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_NAME_FOOD_NAME + TEXT_TYPE + COMMA_SEP + " ) ";
+
+        public static final String DELETE_TABLE = "DROP TABLE IF EXISTS " + TABLE_NAME;
+
+
+    }
+
 
 }
