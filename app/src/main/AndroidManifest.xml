@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FoodWheelActivity"></activity>
+        <activity android:name=".FoodWheelActivity" />
+        <activity android:name=".RedditActivity"></activity>
     </application>
 
 </manifest>
