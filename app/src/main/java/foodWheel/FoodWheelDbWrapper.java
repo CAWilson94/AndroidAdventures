@@ -119,7 +119,7 @@ public class FoodWheelDbWrapper extends DbWrapper {
     }
 
     public static void initialFoodWheelFill(Context context, SQLiteDatabase db) {
-        String[] foodNames = {"Subway", "Coffee and Cookies", "Barburrito", "Sainsburys", "Ichiban"};
+        String[] foodNames = {"Subway", "Coffee and Cookies", "Barburrito", "Sainsburys", "Ichiban", "Joanna Goodbite","One Stop", "KFC","Tesco"};
         for (int i = 0; i < foodNames.length; i++) {
             ContentValues cv = new ContentValues();
             cv.put(DbContract.FoodwheelEntry.COLUMN_NAME_FOOD_NAME, foodNames[i]);
